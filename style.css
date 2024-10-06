@@ -59,13 +59,13 @@
     
         --überuns: #000;
     
-        --mitgliedwerden: #e66969;
-        --mitgliedwerden_sec: #9f1f1f;
+        --mitgliedwerden: #000;
+        --mitgliedwerden_sec: #000;
     
-        --spendenseite: #2b2987;
-        --spendenseite_sec: #a4e2ff;
+        --spendenseite: #000;
+        --spendenseite_sec: #000;
 
-        --footer: #010101;
+        --footer: #000;
     
         /*Schriftfarben*/
         --text: #fff;
