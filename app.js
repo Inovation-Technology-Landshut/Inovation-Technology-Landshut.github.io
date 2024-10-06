@@ -37,3 +37,4 @@ hiddenElementsright.forEach((element) => observerright.observe(element));
 
 const hiddenElementsleft = document.querySelectorAll('.überuns__hidden.left');
 hiddenElementsleft.forEach((element) => observerleft.observe(element));
+

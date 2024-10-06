@@ -23,20 +23,65 @@
     --spendenseite: #2b2987;
     --spendenseite_sec: #a4e2ff;
 
+    --footer: #fff;
+
     /*Schriftfarben*/
     --text: #000;
     --text_sec: #fff;
 
     /*Buttons*/
     --button: #ffcc00;
+    --button_text: #000;
 
     /*Hover*/
     /*Buttons*/
     --button_hover: #ffdd00;
     /*Links*/
     --links_hover: #ffb300;
+
 }
 
+@media (prefers-color-scheme: dark) {
+    body{
+        background-color: #000;
+    }
+    .navbar__logo img{
+        content: url(./images/Logo_white.svg);
+    }
+
+    :root {
+        /*Hintergründe*/
+        --navbar: #000;
+        --navbar_trans: #000000e6;
+    
+        --startseite: #010101;
+        --startseite_sec: #010101;
+    
+        --überuns: #000;
+    
+        --mitgliedwerden: #e66969;
+        --mitgliedwerden_sec: #9f1f1f;
+    
+        --spendenseite: #2b2987;
+        --spendenseite_sec: #a4e2ff;
+
+        --footer: #010101;
+    
+        /*Schriftfarben*/
+        --text: #fff;
+        --text_sec: #fff;
+    
+        /*Buttons*/
+        --button: #ffcc00;
+        --button_text: #000;
+
+        /*Hover*/
+        /*Buttons*/
+        --button_hover: #ffdd00;
+        /*Links*/
+        --links_hover: #ffb300;
+    }
+}
 
 input,
 textarea,
@@ -143,7 +188,7 @@ a:active {
     outline: none;
     border-radius: 8px;
     background: var(--button);
-    color: var(--text);
+    color: var(--button_text);
 }
 
 .button:hover {
@@ -209,7 +254,7 @@ a:active {
         top: 55px;
         width: 100%;
         height: auto;
-        background-color: var(--text_sec);
+        background-color: var(--navbar);
         font-size: 1.2rem;
         border-bottom-left-radius: 16px;
         border-bottom-right-radius: 16px;
@@ -299,6 +344,7 @@ a:active {
     width: 100%;
     max-width: 1300px;
     padding: 0 50px;
+    color: var(--text);
 }
 
 .main__content h1 {
@@ -316,7 +362,7 @@ a:active {
 .main__btn {
     background-color: var(--button);
     border: none;
-    color: var(--text);
+    color: var(--button_text);
     padding: 18px 50px;
     text-align: center;
     text-decoration: none;
@@ -383,8 +429,6 @@ a:active {
 
     .main__btn {
         font-size: 1.2rem;
-        background: var(--button);
-        color: var(--text);
         width: 100%;
         max-width: 400px;
         border: none;
@@ -408,6 +452,7 @@ a:active {
 .überuns {
     background: var(--überuns);
     font-size: 1rem;
+    color: var(--text);
 }
 
 .überuns.right {
@@ -481,7 +526,7 @@ a:active {
 .überuns__btn {
     background-color: var(--button);
     border: none;
-    color: var(--text);
+    color: var(--button_text);
     padding: 18px 50px;
     text-align: center;
     text-decoration: none;
@@ -622,7 +667,7 @@ a:active {
 .mitglied_werden__btn {
     background-color: var(--button);
     border: none;
-    color: var(--text);
+    color: var(--button_text);
     padding: 18px 50px;
     text-align: center;
     text-decoration: none;
@@ -871,7 +916,7 @@ td:first-child {
     height: 3rem;
     font-weight: bold;
     background-color: var(--button);
-    color: var(--text);
+    color: var(--button_text);
     font-size: 1.2rem;
     line-height: 1.25rem;
     cursor: pointer;
@@ -938,7 +983,7 @@ td:first-child {
 /* Footer Section */
 
 .footer__container {
-    background: var(--text_sec);
+    background: var(--footer);
     color: var(--text);
     padding-top: 4rem;
     padding-bottom: 2rem;
